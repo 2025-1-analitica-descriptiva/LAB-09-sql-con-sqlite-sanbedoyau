@@ -43,6 +43,6 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-SELECT K0, ROUND(AVG(c12), 2) as "avg(c12)" FROM tbl1 -- Así para forzar a que pase el test :)
+SELECT K0, avg(c12) FROM tbl1
 WHERE c13 > 400
 GROUP BY K0;
